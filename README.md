@@ -107,13 +107,13 @@ xontrib load 'log-all-history'
 ```
 
 
-[forks-shield]: https://img.shields.io/github/forks/drmikecrowe/xontrib-log-all-historye.svg?style=for-the-badge
-[forks-url]: https://github.com/drmikecrowe/xontrib-log-all-historye/network/members
-[stars-shield]: https://img.shields.io/github/stars/drmikecrowe/xontrib-log-all-historye.svg?style=for-the-badge
-[stars-url]: https://github.com/drmikecrowe/xontrib-log-all-historye/stargazers
-[issues-shield]: https://img.shields.io/github/issues/drmikecrowe/xontrib-log-all-historye.svg?style=for-the-badge
-[issues-url]: https://github.com/drmikecrowe/xontrib-log-all-historye/issues
-[license-shield]: https://img.shields.io/github/license/drmikecrowe/xontrib-log-all-historye.svg?style=for-the-badge
-[license-url]: https://github.com/drmikecrowe/xontrib-log-all-historye/blob/master/LICENSE.txt
+[forks-shield]: https://img.shields.io/github/forks/drmikecrowe/xontrib-log-all-history.svg?style=for-the-badge
+[forks-url]: https://github.com/drmikecrowe/xontrib-log-all-history/network/members
+[stars-shield]: https://img.shields.io/github/stars/drmikecrowe/xontrib-log-all-history.svg?style=for-the-badge
+[stars-url]: https://github.com/drmikecrowe/xontrib-log-all-history/stargazers
+[issues-shield]: https://img.shields.io/github/issues/drmikecrowe/xontrib-log-all-history.svg?style=for-the-badge
+[issues-url]: https://github.com/drmikecrowe/xontrib-log-all-history/issues
+[license-shield]: https://img.shields.io/github/license/drmikecrowe/xontrib-log-all-history.svg?style=for-the-badge
+[license-url]: https://github.com/drmikecrowe/xontrib-log-all-history/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/mwcrowe/

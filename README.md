@@ -1,36 +1,25 @@
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<p align="center">
+persists all shell history in `$HOME/.logs`
+</p>
 
+<p align="center">
+If you like the idea click ⭐ on the repo and <a href="https://twitter.com/intent/tweet?text=Nice%20xontrib%20for%20the%20xonsh%20shell!&url=https://github.com/drmikecrowe/xontrib-log-all-history" target="_blank">tweet</a>.
+</p>
 
 # xontrib log_all_history
 
-[xonsh](https://xon.sh) history logger
+To install use pip:
 
-`log_all_history` persists all shell history in `$HOME/.logs` while also supporting both the `JsonHistory` and `SqliteHistory` backends.
-
-- [xontrib log_all_history](#xontrib-log_all_history)
-  - [Install](#install)
-  - [Architecture](#architecture)
-  - [Searching History](#searching-history)
-    - [`hgrep` -- "H"istory "Grep"](#hgrep----history-grep)
-    - [`hgrep` -- "H"istory in this "D"irectory "Grep"](#hgrep----history-in-this-directory-grep)
-  - [Optional Configuration](#optional-configuration)
-
-## Install
-
-Install using pip
-
-```sh
-pip install xontrib-log_all_history
+```bash
+xpip install xontrib-log-all-history
+# or: xpip install -U git+https://github.com/drmikecrowe/xontrib-log-all-history
 ```
 
-Add to your `.xonshrc` as follows:
+## Usage
 
-```sh
+```bash
 xontrib load log_all_history
+# TODO: what's next?
 ```
 
 > :warning: If you using `SqliteHistory` backend, you **must** include `$XONSH_HISTORY_BACKEND = 'sqlite'` **before** loading.  For example:
@@ -72,11 +61,15 @@ I've been using this method since October in 2019 (both in bash and now xonsh). 
 
 Two helper aliases are enabled to assist in searching your accumulated history:
 
-### `hgrep` -- "H"istory "Grep"
+---
+
+> `hgrep` -- "H"istory "Grep"
 
 This command is simply `grep -ERh {SEARCH_STRING} $HOME/.logs` -- it searches all folders.
 
-### `hgrep` -- "H"istory in this "D"irectory "Grep"
+---
+
+> `hgrep` -- "H"istory in this "D"irectory "Grep"
 
 This command is simply `grep -ERh {SEARCH_STRING} $HOME/.logs/$PWD` -- it searches all logs you've done in this specific directory. The use-case for this is:
 
@@ -106,14 +99,6 @@ $LOG_ALL_HISTORY_DIR = f"{$HOME}/.all-logs"
 xontrib load 'log-all-history'
 ```
 
+## Credits
 
-[forks-shield]: https://img.shields.io/github/forks/drmikecrowe/xontrib-log-all-history.svg?style=for-the-badge
-[forks-url]: https://github.com/drmikecrowe/xontrib-log-all-history/network/members
-[stars-shield]: https://img.shields.io/github/stars/drmikecrowe/xontrib-log-all-history.svg?style=for-the-badge
-[stars-url]: https://github.com/drmikecrowe/xontrib-log-all-history/stargazers
-[issues-shield]: https://img.shields.io/github/issues/drmikecrowe/xontrib-log-all-history.svg?style=for-the-badge
-[issues-url]: https://github.com/drmikecrowe/xontrib-log-all-history/issues
-[license-shield]: https://img.shields.io/github/license/drmikecrowe/xontrib-log-all-history.svg?style=for-the-badge
-[license-url]: https://github.com/drmikecrowe/xontrib-log-all-history/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/mwcrowe/
+This package was created with [xontrib cookiecutter template](https://github.com/xonsh/xontrib-cookiecutter).

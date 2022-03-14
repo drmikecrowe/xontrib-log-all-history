@@ -1,33 +1,43 @@
-from setuptools import setup
+#!/usr/bin/env python
+import setuptools
 
 try:
-    with open('README.md') as fh:
-        LONG_DESC = fh.read()
+    with open('README.md', 'r', encoding='utf-8') as fh:
+        long_description = fh.read()
 except (IOError, OSError):
-    LONG_DESC = ''
+    long_description = ''
 
-setup(
-    name="xontrib-log_all_history",
-    version='1.0.0',
-    url='https://github.com/drmikecrowe/xontrib-log_all_history',
+setuptools.setup(
+    name='xontrib-log-all-history',
+    version='1.1.0',
     license='MIT',
-    author='Mike Crowe',
+    author='Log All History',
     author_email='drmikecrowe@gmail.com',
-    description='History logger for xonsh',
-    long_description=LONG_DESC,
+    description="persists all shell history in $HOME/.logs",
+    long_description=long_description,
     long_description_content_type='text/markdown',
+    python_requires='>=3.6',
+    install_requires=['xonsh'],
     packages=['xontrib'],
     package_dir={'xontrib': 'xontrib'},
     package_data={'xontrib': ['*.xsh']},
     platforms='any',
-    data_files=[("", ["LICENSE.txt"])],
+    url='https://github.com/drmikecrowe/xontrib-log-all-history',
+    project_urls={
+        "Documentation": "https://github.com/drmikecrowe/xontrib-log-all-history/blob/master/README.md",
+        "Code": "https://github.com/drmikecrowe/xontrib-log-all-history",
+        "Issue tracker": "https://github.com/drmikecrowe/xontrib-log-all-history/issues",
+    },
     classifiers=[
-        'Environment :: Console',
-        'Intended Audience :: End Users/Desktop',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python :: 3',
-        'Topic :: Desktop Environment',
-        'Topic :: System :: Shells',
-        'Topic :: System :: System Shells',
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Topic :: System :: Shells",
+        "Topic :: System :: System Shells",
+        "Topic :: Terminals",
     ]
 )

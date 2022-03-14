@@ -6,7 +6,7 @@ persists all shell history in `$HOME/.logs`
 If you like the idea click ⭐ on the repo and <a href="https://twitter.com/intent/tweet?text=Nice%20xontrib%20for%20the%20xonsh%20shell!&url=https://github.com/drmikecrowe/xontrib-log-all-history" target="_blank">tweet</a>.
 </p>
 
-# xontrib log_all_history
+# xontrib log-all-history
 
 To install use pip:
 

@@ -29,7 +29,6 @@ $XONSH_HISTORY_BACKEND = 'sqlite'
 xontrib load 'log-all-history'
 ```
 
-
 ## Architecture
 
 This plugin intercepts history before sending to the `JsonHistory` or `SqliteHistory` backend. In short:
